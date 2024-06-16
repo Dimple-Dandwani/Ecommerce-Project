@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urbanic Shop</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        header hr {
+            margin: 10px 0;
+        }
+
+        header a {
+            text-decoration: none;
+            color: black;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        main {
+            margin-top: 10%; /* Adjust to ensure content is not hidden behind header */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .products {
+            padding: 20px;
+            text-align: center;
+            display: flex; /* Use flexbox to layout items */
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            justify-content: center; /* Center items horizontally */
+        }
+
+        .product-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            max-width: 300px;
+            width: calc(33.33% - 20px); /* Each item takes up one-third of the container width with spacing */
+            margin: 10px; /* Margin between each product item */
+        }
+
+        .product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .product-item h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .product-item p {
+            font-size: 1.2em;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .product-item button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        
+
+        footer {
+            padding: 10px;
+            text-align: center;
+            background: rgb(237, 236, 236);
+            color: rgb(45, 45, 45);
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <br>
+        <center>
+            <img width="15%" src="https://www.gorillacoupon.com/img/urbanic.png" alt="Urbanic">
+        </center><br>
+        <hr>
+        <br>
+        <center>
+            <a href="index.html">Home</a> &nbsp; | &nbsp; 
+            <a href="about.html">About</a> &nbsp; | &nbsp; 
+            <u><a href="shop.html">Shop</a></u>  &nbsp; | &nbsp; 
+            <a href="contact.html">Contact Us</a> &nbsp; | &nbsp; 
+            <a href="payment.html">Payment</a> &nbsp; | &nbsp; 
+            <a href="cart.html">Cart</a> &nbsp;| &nbsp; 
+            <a href="login.html">Login / Signup</a> &nbsp;
+        </center><br>
+    </header>
+    
+    <main>
+        <section class="products" id="productGrid">
+            <div class="product-item">
+                <img src="download 100.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="download200.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$39.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+              <img src="download600.jpg" alt="Product 2">
+              <h3>Product 2</h3>
+              <p>$85.99</p>
+              <button>Add to Cart</button>
+          </div>
+
+          <div class="product-item">
+            <img src="download700.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>$99.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-item">
+          <img src="download 500.jpg"Product 2">
+          <h3>Product 2</h3>
+          <p>$99.99</p>
+          <button>Add to Cart</button>
+      </div>
+
+      <div class="product-item">
+        <img src="download700.jpg" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>$99.99</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-item">
+      <img src="download800.jpg" alt="Product 2">
+      <h3>Product 2</h3>
+      <p>$99.99</p>
+      <button>Add to Cart</button>
+  </div>
+  <div class="product-item">
+    <img src="download600.jpg" alt="Product 2">
+    <h3>Product 2</h3>
+    <p>$99.99</p>
+    <button>Add to Cart</button>
+</div>
+
+<div class="product-item">
+  <img src="download900.jpg" alt="Product 2">
+  <h3>Product 2</h3>
+  <p>$99.99</p>
+  <button>Add to Cart</button>
+</div>
+
+<div class="product-item">
+  <img src="download1000.jpg" alt="Product 2">
+  <h3>Product 2</h3>
+  <p>$99.99</p>
+  <button>Add to Cart</button>
+</div>
+        </section>1
+    </main>
+
+    <footer>
+        <img width="5%" src="https://www.gorillacoupon.com/img/urbanic.png" alt="Urbanic"> | Authors: Dimple, Priya, Janvi, Bhoomi, Priti, Dhanashree, Honey, Mehak
+    </footer>
+
+    
+</body>
+</html>
